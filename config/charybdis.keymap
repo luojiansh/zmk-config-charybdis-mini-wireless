@@ -50,6 +50,26 @@
             #binding-cells = <0>;
             bindings = <&caps_word>, <&kp CAPS>;
         };
+
+        tog_on: tog_on {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "TOG_ON";
+            #binding-cells = <1>;
+        };
+
+        tog_off: tog_off {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "TOG_OFF";
+            #binding-cells = <1>;
+            toggle-mode = "off";
+        };
+
+        mouse_layer: mouse_layer {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MOUSE_LAYER";
+            #binding-cells = <0>;
+            bindings = <&mo 4>, <&tog_on 4>;
+        };
     };
 
     keymap {
@@ -58,7 +78,7 @@
         Base {
             bindings = <
 &none        &kp Q  &kp W  &kp F         &kp P       &kp G                        &kp J              &kp L                 &kp U      &kp Y    &kp SQT   &none
-&key_repeat  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H              &kp N                 &kp E      &kp I    &kp O     &none
+&key_repeat  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H              &kp N                 &kp E      &kp I    &kp O     &mouse_layer
 &none        &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K              &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &none
                            &ltq 5 SPACE  &ltq 7 TAB  &lt 9 ESCAPE  &lt 11 DELETE  &ltq 10 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
@@ -93,10 +113,10 @@
 
         Auto-Mouse {
             bindings = <
-&none  &none     &none         &none      &none      &none                     &none      &none      &none  &none  &none  &none
-&none  &sk LCMD  &sk LEFT_ALT  &sk LCTRL  &sk LSHFT  &sk RIGHT_ALT             &none      &none      &none  &none  &none  &none
-&none  &none     &none         &none      &none      &none                     &none      &none      &none  &none  &none  &none
-                               &mkp LCLK  &mkp RCLK  &mkp MCLK      &mkp LCLK  &mkp RCLK  &mkp MCLK
+&none  &none     &none     &none      &none      &none                 &none      &none      &none  &none  &none  &none
+&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp RALT              &none      &none      &none  &none  &none  &tog_off 4
+&none  &none     &none     &none      &none      &none                 &none      &none      &none  &none  &none  &none
+                           &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
             >;
         };
 
@@ -156,8 +176,8 @@
 
         Control {
             bindings = <
-&sys_reset   &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &none   &none           &none  &none  &none  &sys_reset
-&none        &none         &none         &none         &bt BT_CLR    &out OUT_TOG          &none   &bt BT_CLR_ALL  &none  &none  &none  &none
+&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &none   &none           &none  &none  &none  &none
+&sys_reset   &none         &none         &none         &bt BT_CLR    &out OUT_TOG          &none   &bt BT_CLR_ALL  &none  &none  &none  &sys_reset
 &bootloader  &none         &none         &none         &out OUT_USB  &out OUT_BLE          &none   &none           &none  &none  &none  &bootloader
                                          &trans        &trans        &trans        &trans  &trans  &trans
             >;
