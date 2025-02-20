@@ -177,7 +177,7 @@
 
         Auto-Mouse {
             bindings = <
-&mkp LCLK  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &mo 12
+&mkp LCLK  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &tog 12
 &mkp MCLK  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &tog_off 10
 &mkp RCLK  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &mo 11
                            &trans  &trans  &trans  &trans  &trans  &trans
