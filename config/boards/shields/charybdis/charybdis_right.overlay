@@ -94,7 +94,7 @@
 
     snipe_layers {
         layers = <12>;
-        input-processors = <&zip_xy_scaler 1 3>;
+        input-processors = <&zip_xy_scaler 1 10>;
         process-next;
     };
   };
