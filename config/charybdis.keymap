@@ -80,7 +80,7 @@
 &none        &kp Q  &kp W  &kp F         &kp P       &kp G                        &kp J             &kp L                 &kp U      &kp Y    &kp SQT   &none
 &key_repeat  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H             &kp N                 &kp E      &kp I    &kp O     &tog_on 10
 &mo 11       &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &none
-                           &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 12 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
+                           &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 13 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
@@ -89,7 +89,7 @@
 &trans  &kp Q  &kp W  &kp E         &kp R       &kp T                        &kp Y             &kp U                 &kp I      &kp O    &kp P     &trans
 &trans  &kp A  &kp S  &kp D         &kp F       &kp G                        &kp H             &kp J                 &kp K      &kp L    &kp SQT   &trans
 &trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp N             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 12 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
+                      &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 13 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
@@ -98,7 +98,7 @@
 &trans  &kp Q  &kp W  &kp F         &kp P       &kp G                        &kp J             &kp L                 &kp U      &kp Y    &kp SQT   &trans
 &trans  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H             &kp N                 &kp E      &kp I    &kp O     &trans
 &trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &ltq 5 SPACE  &ltq 7 TAB  &lt 8 ESCAPE  &lt 12 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
+                      &ltq 5 SPACE  &ltq 7 TAB  &lt 8 ESCAPE  &lt 13 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
@@ -107,7 +107,7 @@
 &trans  &kp Q  &kp W  &kp E         &kp R       &kp T                        &kp Y             &kp U                 &kp I      &kp O    &kp P     &trans
 &trans  &kp A  &kp S  &kp D         &kp F       &kp G                        &kp H             &kp J                 &kp K      &kp L    &kp SQT   &trans
 &trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp N             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &ltq 5 SPACE  &ltq 7 TAB  &lt 8 ESCAPE  &lt 12 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
+                      &ltq 5 SPACE  &ltq 7 TAB  &lt 8 ESCAPE  &lt 13 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
@@ -169,12 +169,21 @@
             bindings = <
 &trans  &trans  &trans  &trans     &trans     &trans             &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans     &trans     &trans             &trans  &trans  &trans  &trans  &trans  &tog_off 10
-&trans  &trans  &trans  &trans     &trans     &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &mo 12  &trans  &trans     &trans     &trans             &trans  &trans  &trans  &trans  &trans  &trans
                         &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans  &trans
             >;
         };
 
         Scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        Snipe {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
