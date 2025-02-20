@@ -68,7 +68,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "MOUSE_LAYER";
             #binding-cells = <0>;
-            bindings = <&mo 4>, <&tog_on 4>;
+            bindings = <&mo 10>, <&tog_on 10>;
         };
     };
 
@@ -77,46 +77,37 @@
 
         Base {
             bindings = <
-&none        &kp Q  &kp W  &kp F         &kp P       &kp G                        &kp J              &kp L                 &kp U      &kp Y    &kp SQT   &none
-&key_repeat  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H              &kp N                 &kp E      &kp I    &kp O     &mouse_layer
-&none        &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K              &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &none
-                           &ltq 5 SPACE  &ltq 7 TAB  &lt 9 ESCAPE  &lt 11 DELETE  &ltq 10 BACKSPACE  &mt LEFT_SHIFT ENTER
+&none        &kp Q  &kp W  &kp F         &kp P       &kp G                        &kp J             &kp L                 &kp U      &kp Y    &kp SQT   &none
+&key_repeat  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H             &kp N                 &kp E      &kp I    &kp O     &tog_on 10
+&mo 11       &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &none
+                           &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 12 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
         Qwerty {
             bindings = <
-&trans  &kp Q  &kp W  &kp E         &kp R       &kp T                        &kp Y              &kp U                 &kp I      &kp O    &kp P     &trans
-&trans  &kp A  &kp S  &kp D         &kp F       &kp G                        &kp H              &kp J                 &kp K      &kp L    &kp SQT   &trans
-&trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp N              &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &ltq 5 SPACE  &ltq 7 TAB  &lt 9 ESCAPE  &lt 11 DELETE  &ltq 10 BACKSPACE  &mt LEFT_SHIFT ENTER
+&trans  &kp Q  &kp W  &kp E         &kp R       &kp T                        &kp Y             &kp U                 &kp I      &kp O    &kp P     &trans
+&trans  &kp A  &kp S  &kp D         &kp F       &kp G                        &kp H             &kp J                 &kp K      &kp L    &kp SQT   &trans
+&trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp N             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 12 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
         Mac {
             bindings = <
-&trans  &kp Q  &kp W  &kp F         &kp P       &kp G                        &kp J              &kp L                 &kp U      &kp Y    &kp SQT   &trans
-&trans  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H              &kp N                 &kp E      &kp I    &kp O     &trans
-&trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K              &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &ltq 6 SPACE  &ltq 8 TAB  &lt 9 ESCAPE  &lt 11 DELETE  &ltq 10 BACKSPACE  &mt LEFT_SHIFT ENTER
+&trans  &kp Q  &kp W  &kp F         &kp P       &kp G                        &kp J             &kp L                 &kp U      &kp Y    &kp SQT   &trans
+&trans  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H             &kp N                 &kp E      &kp I    &kp O     &trans
+&trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &ltq 5 SPACE  &ltq 7 TAB  &lt 8 ESCAPE  &lt 12 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
         Mac-Qwerty {
             bindings = <
-&trans  &kp Q  &kp W  &kp E         &kp R       &kp T                        &kp Y              &kp U                 &kp I      &kp O    &kp P     &trans
-&trans  &kp A  &kp S  &kp D         &kp F       &kp G                        &kp H              &kp J                 &kp K      &kp L    &kp SQT   &trans
-&trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp N              &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &ltq 6 SPACE  &ltq 8 TAB  &lt 9 ESCAPE  &lt 11 DELETE  &ltq 10 BACKSPACE  &mt LEFT_SHIFT ENTER
-            >;
-        };
-
-        Auto-Mouse {
-            bindings = <
-&none  &none     &none     &none      &none      &none                 &none      &none      &none  &none  &none  &none
-&none  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp RALT              &none      &none      &none  &none  &none  &tog_off 4
-&none  &none     &none     &none      &none      &none                 &none      &none      &none  &none  &none  &none
-                           &mkp LCLK  &mkp RCLK  &mkp MCLK  &mkp LCLK  &mkp RCLK  &mkp MCLK
+&trans  &kp Q  &kp W  &kp E         &kp R       &kp T                        &kp Y             &kp U                 &kp I      &kp O    &kp P     &trans
+&trans  &kp A  &kp S  &kp D         &kp F       &kp G                        &kp H             &kp J                 &kp K      &kp L    &kp SQT   &trans
+&trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp N             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
+                      &ltq 5 SPACE  &ltq 7 TAB  &lt 8 ESCAPE  &lt 12 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
@@ -171,6 +162,24 @@
 &trans  &sk LWIN    &sk LEFT_ALT   &sk LCTRL      &sk LSHFT         &sk RIGHT_ALT          &kp PAGE_DOWN  &kp LEFT       &kp DOWN  &kp RIGHT   &kp DELETE       &trans
 &trans  &kp LC(Z)   &kp LC(X)      &kp LC(C)      &kp LC(V)         &kp LCMD               &kp ENTER      &kp BACKSPACE  &kp TAB   &kp C_MENU  &kp PRINTSCREEN  &trans
                                    &kp LSHIFT     &kp LALT          &kp LCTRL      &trans  &trans         &trans
+            >;
+        };
+
+        Auto-Mouse {
+            bindings = <
+&trans  &trans  &trans  &trans     &trans     &trans             &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans     &trans     &trans             &trans  &trans  &trans  &trans  &trans  &tog_off 10
+&trans  &trans  &trans  &trans     &trans     &trans             &trans  &trans  &trans  &trans  &trans  &trans
+                        &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans  &trans
+            >;
+        };
+
+        Scroll {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
