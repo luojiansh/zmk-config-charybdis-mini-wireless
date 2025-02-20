@@ -5,6 +5,7 @@
  */
  
 #include "charybdis.dtsi"
+#include <input/processors.dtsi>
 
 &default_transform {
 	col-offset = <6>;
@@ -59,10 +60,19 @@
         spi-max-frequency = <2000000>;
         irq-gpios = <&gpio0 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
          /*   optional features   */
-        scroll-layers = <11>;
-        automouse-layer = <10>;
-        snipe-layers = <12>;
+        // scroll-layers = <11>;
+        // automouse-layer = <10>;
+        // snipe-layers = <12>;
     };
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <500>;
+    //  0  x o o o o o  5   6  x o o o o x  11
+    // 12  x x x x x x  17 18  x o o o o o  23
+    // 24  x o o o o o  29 30  x o o o o x  35
+    // 36        x x x  38 39  o o o        41
+    excluded-positions = <0 6 11 12 13 14 15 16 17 18 24 30 35 36 37 38>;
 };
 
 / {
@@ -70,5 +80,19 @@
     compatible = "zmk,input-listener";
     device = <&trackball>;
 
+    automouse_layers {
+        layers = <0 1 2 3 4 5 6 7 8 9>;
+        input-processors = <&zip_temp_layer 10 500>;
+    };
+
+    scroll_layers {
+        layers = <11>;
+        input-processors = <&zip_xy_to_scroll_mapper>;
+    };
+
+    snipe_layers {
+        layers = <12>;
+        input-processors = <&zip_xy_scaler 1 3>;
+    };
   };
 };
