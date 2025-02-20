@@ -79,7 +79,7 @@
             bindings = <
 &none        &kp Q  &kp W  &kp F         &kp P       &kp G                        &kp J             &kp L                 &kp U      &kp Y    &kp SQT   &none
 &key_repeat  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H             &kp N                 &kp E      &kp I    &kp O     &tog_on 10
-&mo 11       &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &none
+&none        &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &mo 11
                            &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 13 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
@@ -167,10 +167,10 @@
 
         Auto-Mouse {
             bindings = <
-&trans  &trans  &trans  &trans     &trans     &trans             &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans     &trans     &trans             &trans  &trans  &trans  &trans  &trans  &tog_off 10
-&trans  &mo 12  &trans  &trans     &trans     &trans             &trans  &trans  &trans  &trans  &trans  &trans
-                        &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans  &trans
+&mkp LCLK  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &tog 12
+&mkp MCLK  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &tog_off 10
+&mkp RCLK  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
