@@ -32,12 +32,12 @@
         };
 
         Scroll {
-            bindings = <&mo 11>;
+            bindings = <&mo 12>;
             key-positions = <28 29>;
         };
 
         Snipe {
-            bindings = <&mo 12>;
+            bindings = <&mo 13>;
             key-positions = <4 5>;
         };
     };
@@ -88,9 +88,9 @@
         Base {
             bindings = <
 &none        &kp Q  &kp W  &kp F         &kp P       &kp G                        &kp J             &kp L                 &kp U      &kp Y    &kp SQT   &none
-&key_repeat  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H             &kp N                 &kp E      &kp I    &kp O     &tog_on 10
-&none        &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &mo 11
-                           &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 13 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
+&key_repeat  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H             &kp N                 &kp E      &kp I    &kp O     &none
+&none        &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &none
+                           &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 14 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
@@ -99,7 +99,7 @@
 &trans  &kp Q  &kp W  &kp E         &kp R       &kp T                        &kp Y             &kp U                 &kp I      &kp O    &kp P     &trans
 &trans  &kp A  &kp S  &kp D         &kp F       &kp G                        &kp H             &kp J                 &kp K      &kp L    &kp SQT   &trans
 &trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp N             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 13 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
+                      &ltq 4 SPACE  &ltq 6 TAB  &lt 8 ESCAPE  &lt 14 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
@@ -108,7 +108,7 @@
 &trans  &kp Q  &kp W  &kp F         &kp P       &kp G                        &kp J             &kp L                 &kp U      &kp Y    &kp SQT   &trans
 &trans  &kp A  &kp R  &kp S         &kp T       &kp D                        &kp H             &kp N                 &kp E      &kp I    &kp O     &trans
 &trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp K             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &ltq 5 SPACE  &ltq 7 TAB  &lt 8 ESCAPE  &lt 13 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
+                      &ltq 5 SPACE  &ltq 7 TAB  &lt 8 ESCAPE  &lt 14 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
@@ -117,7 +117,7 @@
 &trans  &kp Q  &kp W  &kp E         &kp R       &kp T                        &kp Y             &kp U                 &kp I      &kp O    &kp P     &trans
 &trans  &kp A  &kp S  &kp D         &kp F       &kp G                        &kp H             &kp J                 &kp K      &kp L    &kp SQT   &trans
 &trans  &kp Z  &kp X  &kp C         &kp V       &kp B                        &kp N             &kp M                 &kp COMMA  &kp DOT  &kp FSLH  &trans
-                      &ltq 5 SPACE  &ltq 7 TAB  &lt 8 ESCAPE  &lt 13 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
+                      &ltq 5 SPACE  &ltq 7 TAB  &lt 8 ESCAPE  &lt 14 DELETE  &ltq 9 BACKSPACE  &mt LEFT_SHIFT ENTER
             >;
         };
 
@@ -159,10 +159,10 @@
 
         Function {
             bindings = <
-&trans  &kp C_STOP  &kp C_PREVIOUS  &kp C_PP       &kp C_NEXT     &kp C_BRI_UP              &kp F12        &kp F7     &kp F8  &kp F9  &caps_dance  &trans
-&trans  &sk LCMD    &sk LEFT_ALT    &sk LCTRL      &sk LSHFT      &kp C_BRI_DEC             &kp F11        &kp F4     &kp F5  &kp F6  &to 0        &to 1
-&trans  &kp C_MUTE  &kp C_VOL_DN    &kp LS(LC(C))  &kp LS(LC(V))  &kp C_VOL_UP              &kp F10        &kp F1     &kp F2  &kp F3  &to 2        &to 3
-                                    &trans         &trans         &trans         &kp RCTRL  &kp RIGHT_ALT  &kp RSHFT
+&trans       &kp C_STOP  &kp C_PREVIOUS  &kp C_PP       &kp C_NEXT     &kp C_BRI_UP              &kp F12        &kp F7     &kp F8  &kp F9  &caps_dance  &trans
+&sys_reset   &sk LCMD    &sk LEFT_ALT    &sk LCTRL      &sk LSHFT      &kp C_BRI_DEC             &kp F11        &kp F4     &kp F5  &kp F6  &to 0        &to 1
+&bootloader  &kp C_MUTE  &kp C_VOL_DN    &kp LS(LC(C))  &kp LS(LC(V))  &kp C_VOL_UP              &kp F10        &kp F1     &kp F2  &kp F3  &to 2        &to 3
+                                         &trans         &trans         &trans         &kp RCTRL  &kp RIGHT_ALT  &kp RSHFT
             >;
         };
 
@@ -177,10 +177,19 @@
 
         Auto-Mouse {
             bindings = <
-&trans  &trans    &trans    &trans     &trans     &trans             &mkp LCLK  &trans  &trans  &trans  &trans  &mo 12
-&mo 12  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp RALT           &mkp RCLK  &trans  &trans  &trans  &trans  &tog_off 10
-&mo 11  &trans    &trans    &trans     &trans     &trans             &mkp MCLK  &trans  &trans  &trans  &trans  &mo 11
-                            &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans     &trans
+&mo 13   &trans    &trans    &trans     &trans     &trans             &mkp LCLK  &trans  &trans  &trans  &trans  &mo 13
+&tog 11  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp RALT           &mkp RCLK  &trans  &trans  &trans  &trans  &tog 11
+&mo 12   &trans    &trans    &trans     &trans     &trans             &mkp MCLK  &trans  &trans  &trans  &trans  &mo 12
+                             &mkp LCLK  &mkp RCLK  &mkp MCLK  &trans  &trans     &trans
+            >;
+        };
+
+        Mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -204,10 +213,10 @@
 
         Control {
             bindings = <
-&none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4          &bt BT_DISC 0  &bt BT_DISC 1   &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none
-&sys_reset   &none         &none         &none         &bt BT_CLR    &out OUT_TOG          &none          &bt BT_CLR_ALL  &none          &none          &none          &sys_reset
-&bootloader  &none         &none         &none         &out OUT_USB  &out OUT_BLE          &none          &none           &none          &none          &none          &bootloader
-                                         &trans        &trans        &trans        &trans  &trans         &trans
+&none        &none  &none  &none   &none   &none           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none
+&sys_reset   &none  &none  &none   &none   &none           &out OUT_TOG  &bt BT_CLR    &none         &none         &none         &sys_reset
+&bootloader  &none  &none  &none   &none   &none           &out OUT_BLE  &out OUT_USB  &none         &none         &none         &bootloader
+                           &trans  &trans  &trans  &trans  &trans        &trans
             >;
         };
     };
