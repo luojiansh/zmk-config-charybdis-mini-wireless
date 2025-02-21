@@ -30,16 +30,6 @@
             bindings = <&mkp MCLK>;
             key-positions = <30 31>;
         };
-
-        Scroll {
-            bindings = <&mo 12>;
-            key-positions = <28 29>;
-        };
-
-        Snipe {
-            bindings = <&mo 13>;
-            key-positions = <4 5>;
-        };
     };
 
     behaviors {
@@ -61,24 +51,11 @@
             bindings = <&caps_word>, <&kp CAPS>;
         };
 
-        tog_on: tog_on {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOG_ON";
-            #binding-cells = <1>;
-        };
-
         tog_off: tog_off {
             compatible = "zmk,behavior-toggle-layer";
             label = "TOG_OFF";
             #binding-cells = <1>;
             toggle-mode = "off";
-        };
-
-        mouse_layer: mouse_layer {
-            compatible = "zmk,behavior-tap-dance";
-            label = "MOUSE_LAYER";
-            #binding-cells = <0>;
-            bindings = <&mo 10>, <&tog_on 10>;
         };
     };
 
@@ -177,18 +154,18 @@
 
         Auto-Mouse {
             bindings = <
-&mo 13  &trans    &trans    &trans     &trans     &trans            &mkp LCLK  &trans  &trans  &trans  &trans  &mo 13
+&trans  &trans    &trans    &trans     &trans     &trans            &mkp LCLK  &trans  &trans  &trans  &trans  &trans
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp RALT          &mkp RCLK  &trans  &trans  &trans  &trans  &tog 11
-&mo 12  &trans    &trans    &trans     &trans     &trans            &mkp MCLK  &trans  &trans  &trans  &trans  &mo 12
+&trans  &mo 13    &mo 12    &trans     &trans     &trans            &mkp MCLK  &trans  &trans  &mo 12  &mo 13  &trans
                             &mkp LCLK  &mkp RCLK  &mkp MCLK  &none  &none      &none
             >;
         };
 
         Mouse {
             bindings = <
-&mo 13  &trans    &trans    &trans     &trans     &trans                  &mkp LCLK    &trans       &trans  &trans  &trans  &mo 13
+&trans  &trans    &trans    &trans     &trans     &trans                  &mkp LCLK    &trans       &trans  &trans  &trans  &trans
 &trans  &kp LGUI  &kp LALT  &kp LCTRL  &kp LSHFT  &kp RALT                &mkp RCLK    &trans       &trans  &trans  &trans  &trans
-&mo 12  &trans    &trans    &trans     &trans     &trans                  &mkp MCLK    &trans       &trans  &trans  &trans  &mo 12
+&trans  &trans    &trans    &trans     &trans     &trans                  &mkp MCLK    &trans       &trans  &trans  &trans  &trans
                             &mkp LCLK  &mkp RCLK  &mkp MCLK  &tog_off 11  &tog_off 11  &tog_off 11
             >;
         };
