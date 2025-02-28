@@ -31,9 +31,24 @@
             key-positions = <30 31>;
         };
 
-        compose_key {
-            bindings = <&kp RA(DOUBLE_QUOTES)>;
+        oe {
+            bindings = <&oe>;
             key-positions = <10 22>;
+        };
+
+        ue {
+            bindings = <&ue>;
+            key-positions = <8 20>;
+        };
+
+        ae {
+            bindings = <&ae>;
+            key-positions = <0 12>;
+        };
+
+        ss {
+            bindings = <&ss>;
+            key-positions = <3 15>;
         };
     };
 
@@ -61,6 +76,36 @@
             label = "TOG_OFF";
             #binding-cells = <1>;
             toggle-mode = "off";
+        };
+    };
+
+    macros {
+        ae: umlaut_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(DOUBLE_QUOTES) &kp A>;
+            label = "UMLAUT_A";
+        };
+
+        ue: umlaut_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(DOUBLE_QUOTES) &kp U>;
+            label = "UMLAUT_U";
+        };
+
+        oe: oe {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(DOUBLE_QUOTES) &kp O>;
+            label = "OE";
+        };
+
+        ss: ss {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RA(S) &kp S>;
+            label = "SS";
         };
     };
 
@@ -105,10 +150,10 @@
 
         Symbols {
             bindings = <
-&trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE                  &kp COLON        &kp SEMI  &kp PLUS        &trans
-&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp LEFT_PARENTHESIS       &kp LEFT_BRACE   &kp LBKT  &kp MINUS       &trans
-&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp RIGHT_PARENTHESIS      &kp RIGHT_BRACE  &kp RBKT  &kp UNDERSCORE  &trans
-                                         &trans     &trans     &trans         &kp ESC  &kp LC(BSPC)  &kp RA(RS(DOUBLE_QUOTES))
+&trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE              &kp COLON        &kp SEMI  &kp PLUS        &trans
+&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LBKT  &kp MINUS       &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp UNDERSCORE  &trans
+                                         &trans     &trans     &trans         &kp ESC  &kp LC(BSPC)  &mt RSHFT ENTER
             >;
         };
 
@@ -117,7 +162,7 @@
 &trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE              &kp COLON        &kp SEMI  &kp PLUS        &trans
 &trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LBKT  &kp MINUS       &trans
 &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp UNDERSCORE  &trans
-                                         &trans     &trans     &trans         &kp ESC  &kp LG(BSPC)  &kp RA(DOUBLE_QUOTES)
+                                         &trans     &trans     &trans         &kp ESC  &kp LG(BSPC)  &mt RSHFT ENTER
             >;
         };
 
