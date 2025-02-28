@@ -100,10 +100,10 @@
 
         Symbols {
             bindings = <
-&trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE              &kp COLON        &kp SEMI  &kp PLUS        &trans
-&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LBKT  &kp MINUS       &trans
-&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp UNDERSCORE  &trans
-                                         &trans     &trans     &trans         &kp ESC  &kp LC(BSPC)  &mt RSHFT ENTER
+&trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE                  &kp COLON        &kp SEMI  &kp PLUS        &trans
+&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp LEFT_PARENTHESIS       &kp LEFT_BRACE   &kp LBKT  &kp MINUS       &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp RIGHT_PARENTHESIS      &kp RIGHT_BRACE  &kp RBKT  &kp UNDERSCORE  &trans
+                                         &trans     &trans     &trans         &kp ESC  &kp LC(BSPC)  &kp RA(RS(DOUBLE_QUOTES))
             >;
         };
 
@@ -112,7 +112,7 @@
 &trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE              &kp COLON        &kp SEMI  &kp PLUS        &trans
 &trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LBKT  &kp MINUS       &trans
 &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp UNDERSCORE  &trans
-                                         &trans     &trans     &trans         &kp ESC  &kp LG(BSPC)  &mt RSHFT ENTER
+                                         &trans     &trans     &trans         &kp ESC  &kp LG(BSPC)  &kp RA(DOUBLE_QUOTES)
             >;
         };
 
