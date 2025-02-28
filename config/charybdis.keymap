@@ -43,7 +43,7 @@
 
         ae {
             bindings = <&ae>;
-            key-positions = <0 12>;
+            key-positions = <13 1>;
         };
 
         ss {
