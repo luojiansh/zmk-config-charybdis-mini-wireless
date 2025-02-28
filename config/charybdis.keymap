@@ -30,6 +30,11 @@
             bindings = <&mkp MCLK>;
             key-positions = <30 31>;
         };
+
+        compose_key {
+            bindings = <&kp RA(DOUBLE_QUOTES)>;
+            key-positions = <10 22>;
+        };
     };
 
     behaviors {
