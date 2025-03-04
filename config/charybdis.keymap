@@ -159,9 +159,9 @@
 
         Symbols {
             bindings = <
-&trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS        &trans
-&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &trans
-&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &trans
+&trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE              &kp COLON        &kp SEMICOLON      &kp PLUS        &trans
+&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp MINUS       &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp UNDERSCORE  &trans
                                          &trans     &trans     &trans         &kp ESC  &kp LC(BSPC)  &kp SPACE
             >;
         };
