@@ -159,10 +159,10 @@
 
         Symbols {
             bindings = <
-&trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE              &kp COLON        &kp SEMI  &kp PLUS        &trans
-&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LBKT  &kp MINUS       &trans
-&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp UNDERSCORE  &trans
-                                         &trans     &trans     &trans         &kp ESC  &kp LC(BSPC)  &mt RSHFT ENTER
+&trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE      &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp PLUS        &trans
+&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp COLON      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp MINUS       &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp SEMICOLON  &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp UNDERSCORE  &trans
+                                         &trans     &trans     &trans         &kp ESC  &kp LC(BSPC)  &kp SPACE
             >;
         };
 
@@ -171,25 +171,25 @@
 &trans  &kp EXCL       &kp AT            &kp HASH   &kp DLLR   &kp PRCNT               &kp TILDE     &kp GRAVE              &kp COLON        &kp SEMI  &kp PLUS        &trans
 &trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &kp CARET               &kp EQUAL     &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LBKT  &kp MINUS       &trans
 &trans  &kp LESS_THAN  &kp GREATER_THAN  &kp BSLH   &kp PIPE   &kp AMPERSAND           &kp ASTERISK  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RBKT  &kp UNDERSCORE  &trans
-                                         &trans     &trans     &trans         &kp ESC  &kp LG(BSPC)  &mt RSHFT ENTER
+                                         &trans     &trans     &trans         &kp ESC  &kp LG(BSPC)  &kp SPACE
             >;
         };
 
         Numbers {
             bindings = <
-&trans  &kp LEFT       &kp DOWN          &kp UP     &kp RIGHT  &kp PERCENT               &kp SLASH     &kp N7  &kp N8  &kp N9  &kp PLUS   &trans
-&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &sk RIGHT_ALT             &kp EQUAL     &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
-&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp TAB    &kp BSPC   &kp ENTER                 &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp UNDER  &trans
-                                         &trans     &trans     &trans         &kp SPACE  &kp PERIOD    &kp N0
+&trans  &kp LEFT       &kp DOWN          &kp UP     &kp RIGHT  &kp PERCENT                &kp SLASH     &kp N7     &kp N8  &kp N9  &kp PLUS   &trans
+&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &sk RIGHT_ALT              &kp EQUAL     &kp N4     &kp N5  &kp N6  &kp MINUS  &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp TAB    &kp BSPC   &kp ENTER                  &kp ASTERISK  &kp N1     &kp N2  &kp N3  &kp UNDER  &trans
+                                         &trans     &trans     &trans         &kp PERIOD  &kp N0        &kp SPACE
             >;
         };
 
         Mac-Num {
             bindings = <
-&trans  &kp LEFT       &kp DOWN          &kp UP     &kp RIGHT  &kp PERCENT               &kp SLASH     &kp N7     &kp N8  &kp N9  &kp PLUS   &trans
-&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &sk RIGHT_ALT             &kp EQUAL     &kp N4     &kp N5  &kp N6  &kp MINUS  &trans
-&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp TAB    &kp BSPC   &kp ENTER                 &kp ASTERISK  &kp N1     &kp N2  &kp N3  &kp UNDER  &trans
-                                         &trans     &trans     &trans         &kp SPACE  &kp PERIOD    &kp KP_N0
+&trans  &kp LEFT       &kp DOWN          &kp UP     &kp RIGHT  &kp PERCENT                &kp SLASH     &kp N7     &kp N8  &kp N9  &kp PLUS   &trans
+&trans  &sk LCMD       &sk LEFT_ALT      &sk LCTRL  &sk LSHFT  &sk RIGHT_ALT              &kp EQUAL     &kp N4     &kp N5  &kp N6  &kp MINUS  &trans
+&trans  &kp LESS_THAN  &kp GREATER_THAN  &kp TAB    &kp BSPC   &kp ENTER                  &kp ASTERISK  &kp N1     &kp N2  &kp N3  &kp UNDER  &trans
+                                         &trans     &trans     &trans         &kp PERIOD  &kp KP_N0     &kp SPACE
             >;
         };
 
